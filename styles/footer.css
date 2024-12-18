@@ -9,3 +9,8 @@ footer {
 footer span:nth-child(1) {
     margin-right: auto;
 }
+
+.mobile {
+    display: flex;
+    gap: 24px;
+}

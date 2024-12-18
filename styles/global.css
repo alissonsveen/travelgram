@@ -45,3 +45,95 @@ a:hover{
 .bg-surface-color {
    background-color: var(--surface-color);
 }
+
+@media (width <= 24em) {
+   & .container {
+      max-width: 375px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+
+      & #profile {
+         display: flex;
+         flex-direction: column; 
+         align-items: start; 
+         text-align: start;
+         overflow: hidden; 
+
+         & p {
+         width: 296px;
+         height: 144px;
+         }
+
+         & img {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            padding: 0;
+
+         }
+       }
+
+         & #info {
+            display: flex;
+            position: relative;
+            padding-block: 2rem;
+         }
+       }
+
+       & nav {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         
+
+         & a#logo {
+            position: relative;
+             margin-left: -20px;
+         }
+
+         & #primary-menu {
+
+            & li:nth-child(1) {
+               position: relative;
+               bottom: 50px;
+               left: 250px;
+            }
+            & li:nth-child(4) {
+               position: relative;
+               bottom: 50px;
+               left: 250px;
+            }
+
+            & li:nth-child(2) {
+               display: none;
+            }
+            & li:nth-child(3) {
+               display: none;
+            }
+         }
+       }
+
+       & main {
+      width: 350px;
+       }
+
+      & footer {
+         display: flex;
+         
+         & .mobile {
+            display: flex;
+            text-align: center;
+            margin-inline: auto;
+            gap: 25px;
+         }
+       &  span:nth-child(1) {
+         margin-inline: auto;
+       }
+
+      }
+   }
